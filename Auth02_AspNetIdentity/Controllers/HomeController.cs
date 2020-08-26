@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 
-namespace Auth01_AspNetIdentity.Controllers
+namespace Auth02_AspNetIdentity.Controllers
 {
     public class HomeController : Controller
     {
@@ -74,7 +74,7 @@ namespace Auth01_AspNetIdentity.Controllers
 
             if (result.Succeeded)
             {
-                // Sign user here.
+                // Sign in user here.
                 var signInResult = await _signInManager.PasswordSignInAsync(user, password, false, false);
 
                 if (signInResult.Succeeded)

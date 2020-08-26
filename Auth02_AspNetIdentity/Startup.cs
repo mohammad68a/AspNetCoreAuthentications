@@ -1,4 +1,4 @@
-using Auth01_AspNetIdentity.Data;
+using Auth02_AspNetIdentity.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Auth01_AspNetIdentity
+namespace Auth02_AspNetIdentity
 {
     public class Startup
     {

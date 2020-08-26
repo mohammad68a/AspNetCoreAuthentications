@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Auth01_AspNetIdentity
+namespace Auth02_AspNetIdentity
 {
     public class Program
     {
