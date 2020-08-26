@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth01_Basic", "Auth01_Basi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth02_AspNetIdentity", "Auth02_AspNetIdentity\Auth02_AspNetIdentity.csproj", "{15C4B4FC-276C-4A1E-8F21-1EFD7A34D338}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth03_PolicyAndClaims", "Auth03_PolicyAndClaims\Auth03_PolicyAndClaims.csproj", "{01F3C3F7-0FAE-495D-9FB3-DA3D2E2C77D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth03_PolicyAndClaims", "Auth03_PolicyAndClaims\Auth03_PolicyAndClaims.csproj", "{01F3C3F7-0FAE-495D-9FB3-DA3D2E2C77D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth04_RazorPages", "Auth04_RazorPagesAndFolders\Auth04_RazorPages.csproj", "{0F8EB858-AB91-4DC2-B56F-FE910D1F582B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{01F3C3F7-0FAE-495D-9FB3-DA3D2E2C77D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01F3C3F7-0FAE-495D-9FB3-DA3D2E2C77D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01F3C3F7-0FAE-495D-9FB3-DA3D2E2C77D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8EB858-AB91-4DC2-B56F-FE910D1F582B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8EB858-AB91-4DC2-B56F-FE910D1F582B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8EB858-AB91-4DC2-B56F-FE910D1F582B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8EB858-AB91-4DC2-B56F-FE910D1F582B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
