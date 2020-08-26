@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Security.Claims;
-using static Auth03_PolicyAndClaims.AuthRequirements.CustomRequireClaim;
 
 namespace Auth03_PolicyAndClaims
 {
