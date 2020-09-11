@@ -18,7 +18,7 @@ namespace Auth05_JwtBearerServer.Controllers
         [Authorize]
         public IActionResult Secret()
         {
-            return Ok("Here is secret page!");
+            return Ok("Here is server secret page!");
         }
 
         public IActionResult Authenticate()
@@ -26,6 +26,7 @@ namespace Auth05_JwtBearerServer.Controllers
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub, "some_id"),
+                new Claim("granny", "cookie")
             };
 
             var secretBytes = Encoding.UTF8.GetBytes(Constants.Secret);
