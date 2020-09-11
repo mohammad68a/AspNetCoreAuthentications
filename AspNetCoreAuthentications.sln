@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth01_Basic", "Auth01_Basic\Auth01_Basic.csproj", "{464D5F2D-E4FF-47B5-9F8C-21E9A03A82F9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth02_AspNetIdentity", "Auth02_AspNetIdentity\Auth02_AspNetIdentity.csproj", "{15C4B4FC-276C-4A1E-8F21-1EFD7A34D338}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth03_PolicyAndClaims", "Auth03_PolicyAndClaims\Auth03_PolicyAndClaims.csproj", "{01F3C3F7-0FAE-495D-9FB3-DA3D2E2C77D5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth04_RazorPages", "Auth04_RazorPages\Auth04_RazorPages.csproj", "{05CA6201-23F2-4613-A4BB-F642532DA817}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth05_JwtBearerServer", "Auth05_JwtBearerServer\Auth05_JwtBearerServer.csproj", "{A5177E0F-00D2-446B-B609-06011BB2919B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth01_CookieAuth", "Auth01_CookieAuth\Auth01_CookieAuth.csproj", "{8DBDCC96-FC74-430E-B7E9-76D343F4B8E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{464D5F2D-E4FF-47B5-9F8C-21E9A03A82F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{464D5F2D-E4FF-47B5-9F8C-21E9A03A82F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{464D5F2D-E4FF-47B5-9F8C-21E9A03A82F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{464D5F2D-E4FF-47B5-9F8C-21E9A03A82F9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{15C4B4FC-276C-4A1E-8F21-1EFD7A34D338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{15C4B4FC-276C-4A1E-8F21-1EFD7A34D338}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15C4B4FC-276C-4A1E-8F21-1EFD7A34D338}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +31,14 @@ Global
 		{05CA6201-23F2-4613-A4BB-F642532DA817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05CA6201-23F2-4613-A4BB-F642532DA817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05CA6201-23F2-4613-A4BB-F642532DA817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5177E0F-00D2-446B-B609-06011BB2919B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5177E0F-00D2-446B-B609-06011BB2919B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5177E0F-00D2-446B-B609-06011BB2919B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5177E0F-00D2-446B-B609-06011BB2919B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DBDCC96-FC74-430E-B7E9-76D343F4B8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBDCC96-FC74-430E-B7E9-76D343F4B8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBDCC96-FC74-430E-B7E9-76D343F4B8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBDCC96-FC74-430E-B7E9-76D343F4B8E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

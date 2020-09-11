@@ -1,4 +1,4 @@
-﻿namespace Auth05_JwtTokenServer
+﻿namespace Auth05_JwtBearerServer
 {
     public static class Constants
     {

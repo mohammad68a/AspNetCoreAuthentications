@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Auth05_JwtTokenServer
+namespace Auth05_JwtBearerServer
 {
     public class Program
     {

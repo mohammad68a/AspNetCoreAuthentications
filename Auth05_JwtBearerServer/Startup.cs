@@ -8,7 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Auth05_JwtTokenServer
+namespace Auth05_JwtBearerServer
 {
     public class Startup
     {

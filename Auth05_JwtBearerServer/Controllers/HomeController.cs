@@ -6,7 +6,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Auth05_JwtTokenServer.Controllers
+namespace Auth05_JwtBearerServer.Controllers
 {
     public class HomeController : Controller
     {

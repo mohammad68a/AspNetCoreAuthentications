@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Auth01_Basic
+namespace Auth01_CookieAuth
 {
     public class Startup
     {

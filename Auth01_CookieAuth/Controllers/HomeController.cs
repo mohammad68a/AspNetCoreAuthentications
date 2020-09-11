@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Security.Claims;
 
-namespace Auth01_Basic.Controllers
+namespace Auth01_CookieAuth.Controllers
 {
     public class HomeController : Controller
     {
