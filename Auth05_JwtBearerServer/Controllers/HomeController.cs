@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Auth05_JwtBearerServer.Controllers
 {
@@ -31,9 +33,8 @@ namespace Auth05_JwtBearerServer.Controllers
 
             var secretBytes = Encoding.UTF8.GetBytes(Constants.Secret);
             var key = new SymmetricSecurityKey(secretBytes);
-            var algorithm = SecurityAlgorithms.HmacSha256;
 
-            var signInCredentials = new SigningCredentials(key, algorithm);
+            var signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
                 Constants.Issuer, 
@@ -41,7 +42,7 @@ namespace Auth05_JwtBearerServer.Controllers
                 claims,
                 notBefore: DateTime.Now, 
                 expires: DateTime.Now.AddDays(1), 
-                signInCredentials);
+                signingCredentials);
 
             var tokenJson = new JwtSecurityTokenHandler().WriteToken(token);
 
@@ -51,6 +52,7 @@ namespace Auth05_JwtBearerServer.Controllers
         public IActionResult Decode(string part)
         {
             var bytes = Convert.FromBase64String(part);
+
             return Ok(Encoding.UTF8.GetString(bytes));
         }
     }
