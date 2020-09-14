@@ -40,7 +40,8 @@ namespace Auth05_JwtBearerServer.Controllers
             {
                 { "code", code },
                 { "state", state }
-            };
+            }
+            .ToString();
             return Redirect($"{redirectUri}{query}");
         }
 
@@ -58,9 +59,8 @@ namespace Auth05_JwtBearerServer.Controllers
 
             var secretBytes = Encoding.UTF8.GetBytes(Constants.Secret);
             var key = new SymmetricSecurityKey(secretBytes);
-            var algorithm = SecurityAlgorithms.HmacSha256;
 
-            var signInCredentials = new SigningCredentials(key, algorithm);
+            var signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
                 Constants.Issuer,
@@ -68,7 +68,7 @@ namespace Auth05_JwtBearerServer.Controllers
                 claims,
                 notBefore: DateTime.Now,
                 expires: DateTime.Now.AddDays(1),
-                signInCredentials);
+                signingCredentials);
 
             var access_token = new JwtSecurityTokenHandler().WriteToken(token);
 
