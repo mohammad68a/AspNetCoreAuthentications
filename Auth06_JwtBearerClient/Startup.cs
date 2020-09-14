@@ -6,6 +6,8 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,14 +42,10 @@ namespace Auth06_JwtBearerClient
                 {
                     OnCreatingTicket = context =>
                     {
-                        var accessToken = context.AccessToken;
-                        var payloadBase64 = accessToken.Split('.')[1];
-                        var bytes = Convert.FromBase64String(payloadBase64);
-                        var jsonPayload = Encoding.UTF8.GetString(bytes);
-                        var claims = JsonConvert.DeserializeObject<Dictionary<string, string>>(jsonPayload);
-                        foreach (var claim in claims)
+                        var token = new JwtSecurityTokenHandler().ReadToken(context.AccessToken) as JwtSecurityToken;
+                        foreach (var claim in token.Claims)
                         {
-                            context.Identity.AddClaim(new Claim(claim.Key, claim.Value));
+                            context.Identity.AddClaim(new Claim(claim.Type, claim.Value));
                         }
                         return Task.CompletedTask;
                     }
