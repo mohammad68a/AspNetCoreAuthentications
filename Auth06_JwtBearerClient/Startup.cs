@@ -52,6 +52,8 @@ namespace Auth06_JwtBearerClient
                 };
             });
 
+            services.AddHttpClient();
+
             services.AddControllersWithViews()
                 .AddRazorRuntimeCompilation(); // Added via package `Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation`
         }
